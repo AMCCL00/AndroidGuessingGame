@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.example.andrewmcclary.guessinggame.MainActivity">
 
     <Button
@@ -16,7 +17,7 @@
         android:layout_marginStart="8dp"
         android:backgroundTint="@android:color/black"
         android:text="Start"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@android:color/background_light"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
