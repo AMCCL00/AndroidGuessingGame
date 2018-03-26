@@ -23,7 +23,7 @@ public class ResultsActivity extends AppCompatActivity {
         mButton = findViewById(R.id.button_play_again);
         mImageView = findViewById(R.id.image_results);
         didWin = getIntent().getExtras().getBoolean(GameActivity.TAG);
-        correctGuess = getIntent().getExtras().getInt(GameActivity.CORRECTGUESS);
+        correctGuess = getIntent().getExtras().getInt(GameActivity.CORRECT_GUESS);
         results();
         playAgain();
     }

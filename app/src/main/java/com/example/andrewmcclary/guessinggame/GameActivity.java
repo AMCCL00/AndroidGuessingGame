@@ -18,7 +18,7 @@ public class GameActivity extends AppCompatActivity{
     private int randomNumber;
     private int numberOfGuesses = 4;
     public static final String TAG = "DIDWIN";
-    public static final String CORRECTGUESS = "Correct Guess is ";
+    public static final String CORRECT_GUESS = "Correct Guess is ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,14 +62,14 @@ public class GameActivity extends AppCompatActivity{
             startActivity(intent);
         }else if (guess < randomNumber){
             if (numberOfGuesses == 0){
-                intent.putExtra(CORRECTGUESS, randomNumber);
+                intent.putExtra(CORRECT_GUESS, randomNumber);
                 startActivity(intent);
             }else{
              mTextView.setText("Higher");
             }
         }else if(guess > randomNumber){
             if (numberOfGuesses == 0){
-                intent.putExtra(CORRECTGUESS, randomNumber);
+                intent.putExtra(CORRECT_GUESS, randomNumber);
                 startActivity(intent);
             }else{
                 mTextView.setText("Lower");
